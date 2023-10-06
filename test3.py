@@ -10,4 +10,4 @@ arr1 = np.arange(24).reshape((6,4))
 print(arr1)
 print(arr1[[3,2,5],[2,0,1]])  # (row, column)  ->  (3,2) , (2,0) , (5,1)
 
-# axis 0 : row , axis 1 : column
+# axis 1 : row , axis 0 : column
