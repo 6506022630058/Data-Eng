@@ -15,4 +15,7 @@ print(arr[:2,1:])
 print('-------------------------------------------')
 arr2 = np.arange(1,11)
 arr3 = arr2 > 7
+arr4 = arr2 % 2 == 0
 print(arr3)
+print(arr4)
+print(arr3 == arr4)
