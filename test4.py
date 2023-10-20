@@ -16,9 +16,11 @@ print(df)
 print('-'*50)
 print(df[['W','X']])
 
+print('-'*50)
 df['new'] = df['W'] + df['Y']
 print(df)
 
+print('-'*50)
 df2 = df.drop('new',axis=1)
 print(df2)
 
@@ -29,3 +31,13 @@ data = {'Company':['GOOG','GOOG','MSFT','MSFT','FB','FB'],
                   'Sarah'],'Sales':[200,120,340,124,243,350]}
 df = pd.DataFrame(data)
 print(df)
+by_comp = df.groupby('Company')
+print('-'*50)
+print(by_comp.mean('Company'))
+
+print('-'*50)
+
+long_series = pd.Series(np.random.randn(1000))
+print(long_series.head())
+print('-'*50)
+print(long_series.tail())
